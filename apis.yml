@@ -1,7 +1,11 @@
 aid: ecolab
-url: https://raw.githubusercontent.com/api-evangelist/ecolab/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/ecolab/refs/heads/main/apis.yml
 modified: '2026-03-21'
 apis: []
 common:
   - type: Website
     url: https://www.ecolab.com
+description: >-
+  Ecolab offers water, hygiene and infection prevention solutions and services that
+  help make the world cleaner, safer and healthier – protecting people and vital resources.
