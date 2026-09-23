@@ -1,7 +1,9 @@
 ---
 title: Ecolab Unleashes Water Intelligence to Drive Growth in the ...
 url: https://www.businesswire.com/news/home/20260422376349/en/Ecolab-Unleashes-Water-Intelligence-to-Drive-Growth-in-the-AI-Era
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Ecolab" press release artificial intelligence'
 position: 3
 source: serpapi-google
