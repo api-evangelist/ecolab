@@ -1,11 +1,15 @@
 aid: ecolab
+
 name: Ecolab
+
 description: >-
   Ecolab is a Fortune 500 global leader in water, hygiene, and infection prevention
   solutions and services. The company helps customers in food, healthcare, hospitality,
   industrial, and energy markets keep their environments clean, safe, and healthy
   while protecting people and vital resources.
+
 type: Index
+
 deliveryModel:
   model: unknown
   open_source: false
@@ -17,6 +21,7 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -28,8 +33,11 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ecolab.png
+
 url: https://raw.githubusercontent.com/api-evangelist/ecolab/refs/heads/main/apis.yml
+
 tags:
   - Cleaning
   - Fortune 500
@@ -37,11 +45,22 @@ tags:
   - Infection Prevention
   - Sustainability
   - Water
+
 created: '2026-03-21'
+
 modified: '2026-04-28'
+
 specificationVersion: '0.23'
-apis: []
+
+maintainers:
+  - FN: Kin Lane
+    email: info@apievangelist.com
+
 common:
+  - type: Hosts
+    url: hosts/ecolab-hosts.yml
+  - type: Vendors
+    url: vendors/ecolab-vendors.yml
   - type: DomainSecurity
     url: security/ecolab-domain-security.yml
   - type: LinkedIn
@@ -52,10 +71,26 @@ common:
     url: https://investor.ecolab.com
   - type: Newsroom
     url: https://www.ecolab.com/news
-  - type: Sustainability
-    url: https://www.ecolab.com/sustainability
   - type: Contact
     url: https://www.ecolab.com/contact-us
-maintainers:
-  - FN: Kin Lane
-    email: info@apievangelist.com
+
+apis: []
+
+x-coverage:
+  state: blocked
+  reason: bot-challenge
+  detail: www.ecolab.com answers every path (homepage, /llms.txt, /privacy-policy) with an Akamai edgesuite "Access Denied" 403, even to a headless browser, and api.ecolab.com returns 404 with no developer host resolving.
+  evidence:
+    - url: https://www.ecolab.com
+      status: 403
+    - url: https://www.ecolab.com/llms.txt
+      status: 403
+    - url: https://api.ecolab.com/openapi.json
+      status: 404
+  checked: '2026-10-20'
+
+x-enrichment:
+  date: '2026-10-20'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v5

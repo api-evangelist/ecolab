@@ -1,0 +1,58 @@
+generated: '2026-10-20'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 4
+  own: 3
+  other_domain: 0
+  platform: 1
+  roles:
+  - api
+  - other
+  - website
+hosts:
+- host: api.ecolab.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: ecolab.com
+  role: api
+  relation: own
+- host: investor.ecolab.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Investor Relations
+  serves: []
+  registrable_domain: ecolab.com
+  role: other
+  relation: own
+- host: www.ecolab.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  - Newsroom
+  - Sustainability
+  - Contact
+  serves: []
+  registrable_domain: ecolab.com
+  role: website
+  relation: own
+- host: www.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
